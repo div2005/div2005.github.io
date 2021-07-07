@@ -3,7 +3,7 @@
 body {
     /*background: #e64c5b; #6c59ff border: 1px solid black; */
     background: #2e3266;
-    margin-top: 5%;
+    margin: 0;
     color: black;
     font-family: 'Poppins', sans-serif;
 }
@@ -20,6 +20,7 @@ body {
 }
 
 .main-container {
+    margin-top: 5%;
     text-decoration: none; 
     border-radius: 15px;
     background: white; 
