@@ -1,28 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
-
-body {
-    background: rgb(33, 37, 41);
-    font-family: 'Poppins', sans-serif;
-    color: rgba(255, 255, 255, 0.9);
-    margin: 0; 
-}
-
-body::-webkit-scrollbar {
-    width: 0.25em;
-    height: 0.25em;
-}
-   
-body::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
-}
-   
-body::-webkit-scrollbar-thumb {
-    border-radius: 5px;
-    background-color: rgb(92, 92, 92);
-}
-
-/**/
-
 .container {
     margin: 5%;
     display: grid;
@@ -39,6 +14,10 @@ body::-webkit-scrollbar-thumb {
 .about { 
     grid-area: about; 
     margin: 0 5%;
+}
+
+.about a {
+    color: rgba(255, 255, 255, 0.9);
 }
   
 .links { 
@@ -101,27 +80,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
-    
-    .navigation ul {
-        
-        flex-wrap: wrap;
-     }
-     
-    .navigation li {
-        flex: 1 1 50%;
-     }
-  
-    .navigation .user {
-        flex: 1 50%;
-     }
-  
-    .user a {
-        width: 100%;
-    }
-    
-    .user img {
-        margin: 0 -3%;
-    }
 
     .container {
         grid-template-columns: auto;
@@ -166,28 +124,7 @@ body::-webkit-scrollbar-thumb {
 
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
 
-    .navigation ul {
-        font-size: 3.5em;
-        flex-wrap: wrap;
-     }
-     
-    .navigation li {
-        flex: 1 1 50%;
-     }
-  
-    .navigation .user {
-        margin-bottom: 5%;
-        flex: 1 100%;
-        visibility: hidden;
-     }
-  
-    .user a {
-        width: 100%;
-    }
     
-    .user img {
-        margin: 0 -3%;
-    }
 
     .container {
         grid-template-columns: auto;
