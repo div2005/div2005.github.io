@@ -18,8 +18,16 @@
     background: rgb(36, 40, 43);
     margin-bottom: 1%;
     border-radius: 10px;
-  }
-  
+}
+
+.post a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.post a:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
 .image {
     width: 25vmax;
     height: 25vmax;
@@ -40,10 +48,6 @@
     margin: 0 1%;
     grid-area: textbox;
     max-width: 150vmax;
-}
-
-.textbox a {
-    color: rgba(255, 255, 255, 0.8);
 }
 
 .tags {
@@ -95,7 +99,6 @@
     }
 
     .tags {
-        
         margin-left: 1%
     }
 
@@ -104,7 +107,7 @@
         padding: 0 3%;
     }
 
-    .textbox, .date, .header {
+    .textbox, .header {
         margin: 1% 3%;
     }
 
