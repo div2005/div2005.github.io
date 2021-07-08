@@ -54,8 +54,9 @@
      }
      
     .navigation li {
-        flex: 1 1 50%;
-     }
+        flex: 1 100%;
+        border-bottom: 2px solid white;
+    }
   
     .navigation .user {
         flex: 1 50%;
@@ -66,9 +67,9 @@
     }
     
     .user img {
-        width: 5vmax;
-        height: 5vmax;
-        margin: 0 -3%;
+        width: 3vmax;
+        height: 3vmax;
+        margin: 0 -4%;
     }
 }
 
@@ -80,14 +81,16 @@
      }
      
     .navigation li {
-        flex: 1 1 50%;
+        flex: 1 100%;
+        border-bottom: 2px solid white;
      }
   
     .navigation .user {
         margin-bottom: 10%;
         flex: 1 100%;
+        
      }
-  
+     
     .user a {
         width: 100%;
     }

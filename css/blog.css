@@ -4,8 +4,8 @@
 
 .post {
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr 16fr;
-    grid-template-rows: 2fr 4fr 1.25fr;
+    grid-template-columns: 0.5fr 2.5fr 15fr;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: row dense;
     grid-template-areas:
@@ -20,7 +20,8 @@
   
 .image { 
     grid-area: image; 
-    border-radius: 10px 0px 0px 10px ;
+    border-radius: 10px 0px 0px 10px;
+    object-fit: cover;
 }
   
 .header { 
@@ -33,9 +34,8 @@
     grid-area: textbox;
 }
 
-.post img {
-    width: 16vmax;
-    height: 100%;
+.image {
+    width: 20vmax;
 }
 
 .textbox a {
@@ -43,19 +43,167 @@
 }
 
 .date {
+    color: rgba(255, 255, 255, 0.6);
     margin-left: 10%;
 }
 
 .tags {
-    width:100%;
+    width: 100%;
     display: inline;
 }
 
 .tag {
-    height: 75%;
+    color: rgba(255, 255, 255, 0.75);
+    margin-bottom: 0.5%;
+    height: auto;
     padding: 0 2% 0 1%;
     display: inline-block;
     text-align: center;
     border-radius: 0px 10px 10px 0px;
     background: rgb(39, 42, 46);
+}
+
+@media only screen and (min-width: 1920px), only screen and (min-device-width: 1920px){ 
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .post {
+        width: 30%;
+        margin: 1%;
+        border-radius: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0fr 0fr 0fr;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+        "image"
+        "header"
+        "textbox"
+        "date"
+        "tags";
+    }
+
+    .image {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 15vmax;
+    }
+
+    .date { margin-left: 1% }
+
+    .tags {
+        
+        margin-left: 1%
+    }
+
+    .tag {
+        border-radius: 0px 25px 25px 0px;
+        padding: 0 3%;
+    }
+
+    .textbox, .date, .header {
+        margin: 1% 3%;
+    }
+
+    .tags {
+        margin-bottom: 1%;
+    }
+}
+
+@media only screen and (max-width: 1366px), only screen and (max-device-width: 1366px) {
+
+    .post {
+        grid-template-columns: 1.5fr 3.5fr 15fr;
+        grid-template-rows: 0fr 0fr 0fr;
+    }
+
+    .image {
+        height: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
+
+    .post {
+        margin-bottom: 3%;
+        border-radius: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+        "image"
+        "header"
+        "textbox"
+        "date"
+        "tags";
+    }
+
+    .image {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 35vmax;
+    }
+
+    .date { margin-left: 1% }
+
+    .tags {
+        
+        margin-left: 1%
+    }
+
+    .tag {
+        border-radius: 0px 25px 25px 0px;
+        padding: 0 3%;
+    }
+}
+
+@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
+
+    .post {
+        margin-bottom: 5%;
+        border-radius: 15px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0fr 0fr;
+        grid-auto-columns: 1fr;
+        grid-auto-flow: row dense;
+        grid-template-areas:
+        "image"
+        "header"
+        "textbox"
+        "date"
+        "tags";
+    }
+
+    .image {
+        border-radius: 15px 15px 0px 0px;
+        width: 100%;
+        height: 35vmax;
+    }
+
+    .date { 
+        margin-left: 1%;
+        font-size: 1.5em;
+    }
+
+    .tags {
+        font-size: 2.5em;
+        margin-left: 1%
+    }
+
+    .tag {
+        border-radius: 0px 25px 25px 0px;
+        padding: 0 3%;
+    }
+
+    .header {
+        font-size: 3.5em;
+    }
+    .textbox {
+        font-size: 2.5em;
+    }
 }
