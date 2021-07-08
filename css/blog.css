@@ -4,21 +4,24 @@
 
 .post {
     display: grid;
-    grid-template-columns: 0.5fr 2.5fr 15fr;
-    grid-template-rows: 1fr 2fr 0fr;
+    grid-template-columns: 0.5fr 2.5fr;
+    grid-template-rows: 0fr 1fr 0fr;
     grid-auto-columns: 1fr;
     grid-auto-flow: row dense;
     grid-template-areas:
-        "image header header"
-        "image textbox textbox"
-        "image date tags"; 
+        "image header"
+        "image textbox"
+        "image tags"; 
     width: 100%;
-    background: rgb(49, 54, 59);
+    min-height: 15vmax;
+    background: rgb(37, 42, 46);
     margin-bottom: 1%;
     border-radius: 10px;
   }
   
-.image { 
+.image {
+    width: 25vmax;
+    height: 100%;
     grid-area: image; 
     border-radius: 10px 0px 0px 10px;
     object-fit: cover;
@@ -34,22 +37,15 @@
     grid-area: textbox;
 }
 
-.image {
-    width: 20vmax;
-}
-
 .textbox a {
     color: white;
-}
-
-.date {
-    color: rgba(255, 255, 255, 0.6);
-    margin-left: 10%;
 }
 
 .tags {
     width: 100%;
     display: inline;
+    align-self: flex-end;
+    margin: 0 1%;
 }
 
 .tag {
@@ -59,8 +55,8 @@
     padding: 0 2% 0 1%;
     display: inline-block;
     text-align: center;
-    border-radius: 0px 10px 10px 0px;
-    background: rgb(39, 42, 46);
+    border-radius: 10px;
+    background: rgba(45, 48, 53, 0.6);
 }
 
 @media only screen and (min-width: 1920px), only screen and (min-device-width: 1920px){ 
@@ -82,7 +78,6 @@
         "image"
         "header"
         "textbox"
-        "date"
         "tags";
     }
 
@@ -92,15 +87,13 @@
         height: 15vmax;
     }
 
-    .date { margin-left: 1% }
-
     .tags {
         
         margin-left: 1%
     }
 
     .tag {
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 25px;
         padding: 0 3%;
     }
 
@@ -116,14 +109,17 @@
 @media only screen and (max-width: 1366px), only screen and (max-device-width: 1366px) {
 
     .post {
-        grid-template-columns: 1.5fr 3.5fr 15fr;
-        grid-template-rows: 0fr 0fr 0fr;
+        grid-template-columns: 0.5fr 6.5fr;
+        grid-template-rows: 0fr 0fr;
     }
 
     .image {
         height: 100%;
     }
 
+    .textbox {
+        margin-bottom: 1%;
+    }
 }
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
@@ -132,33 +128,30 @@
         margin-bottom: 3%;
         border-radius: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0fr 0fr;
+        grid-template-rows: 1fr 0fr;
         grid-auto-columns: 1fr;
         grid-auto-flow: row dense;
         grid-template-areas:
         "image"
         "header"
         "textbox"
-        "date"
         "tags";
     }
 
     .image {
         border-radius: 15px 15px 0px 0px;
         width: 100%;
-        height: 35vmax;
+        height: 45vmax;
     }
 
-    .date { margin-left: 1% }
-
     .tags {
-        
-        margin-left: 1%
+        margin-bottom: 1%;
+        margin-left: 1%;
     }
 
     .tag {
-        border-radius: 0px 25px 25px 0px;
-        padding: 0 3%;
+        border-radius: 25px;
+        padding: 0 2%;
     }
 }
 
@@ -168,14 +161,13 @@
         margin-bottom: 5%;
         border-radius: 15px;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 0fr 0fr;
+        grid-template-rows: 1fr 0fr;
         grid-auto-columns: 1fr;
         grid-auto-flow: row dense;
         grid-template-areas:
         "image"
         "header"
         "textbox"
-        "date"
         "tags";
     }
 
@@ -185,25 +177,21 @@
         height: 35vmax;
     }
 
-    .date { 
-        margin-left: 1%;
-        font-size: 1.5em;
-    }
-
     .tags {
         font-size: 2.5em;
-        margin-left: 1%
     }
 
     .tag {
-        border-radius: 0px 25px 25px 0px;
+        border-radius: 25px;
         padding: 0 3%;
     }
 
     .header {
         font-size: 3.5em;
+        margin: 0 3%;
     }
     .textbox {
         font-size: 2.5em;
+        margin: 0 3%;
     }
 }
