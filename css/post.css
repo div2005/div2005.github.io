@@ -22,7 +22,7 @@
     content: counter(line);
     border-radius: 15px;
     white-space: pre-wrap;
-    width: 90%;
+    width: 98%;
     background: rgb(22, 24, 26);
     padding: 0.5% 1% 0 1%;
     font-family: 'PT Mono', monospace;
@@ -97,7 +97,7 @@ mark {
     }
 
     .code {
-        margin: auto;
+        margin: 2% auto;
         width: 90%;
         padding: 5% 5% 0% 5%;
         overflow-x: auto;
