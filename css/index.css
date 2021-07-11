@@ -240,7 +240,6 @@
     .box { 
         width: 100%;
         position: fixed;
-        visibility: visible;
     }
 
     .rv {
