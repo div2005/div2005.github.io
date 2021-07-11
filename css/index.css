@@ -10,6 +10,10 @@
       "nickname about"
       "shorts links";
 }
+
+.page {
+    position: relative;
+}
   
 .about { 
     grid-area: about; 
@@ -32,11 +36,11 @@
 .link {
     font-size: 4em;
     display: inline;
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.85);
 }
 
 .link:hover {
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.7);
 }
   
 .avatar { 
@@ -74,6 +78,120 @@
     text-align: center;
     font-weight: bold;
 }
+
+.box {
+    margin: -5%;
+    position: fixed;
+    width: 100%;
+    height: 150vmax;
+    background: rgba(0, 0, 0, 0.65);
+    visibility: hidden;
+}
+
+.rv {
+    user-select: none;
+    margin: 10% auto;
+    width: 40%;
+    height: auto;
+    background: rgb(33, 36, 39);
+    border-radius: 10px;
+    min-height: 15vmax;
+}
+
+.rv-header {
+    height: 12vmax;
+    flex-direction: column;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    border-radius: 10px 10px 0 0;
+    background: rgb(30, 33, 36);
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://autumn.revolt.chat/backgrounds/-2ROOBvcbMediTIukgPuG7XfZUK5D8Tsm1d8s750rW");
+}
+
+.rv-avatar {
+    object-fit: cover;
+    width: 6vmax;
+    height: 6vmax;
+    border-radius: 50%;
+}
+
+.rv-profile {
+    display: flex; 
+    align-items: center;
+    gap: 3%;
+    padding: 4%;
+    
+}
+
+.rv-nickname {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rv-close {
+    padding: 1%;
+    font-size: 1.75em;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.rv-close:hover {
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.rv-details {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.rv-tabs { 
+    display: flex;
+    gap: 3%;
+    padding: 0 3%;
+}
+
+.rv-tabs span {
+    border-bottom: 1.5px solid;
+    text-align: center;
+    font-size: 1.1em;
+    padding: 1% 2.5%; 
+}
+
+.rv-footer {
+    min-height: 5vmax;
+    padding: 4%;
+    
+}
+
+.rv-cat {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 0.8em;
+    text-transform: uppercase;
+    padding: 0.5%;
+}
+
+.rv-badges {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5%;
+    padding: 1%;
+}
+
+.rv-info {
+    padding: 1%;
+}
+
+.rv-badges img {
+    width: 2vmax;
+    gap: 20%;
+}
+
+
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
 

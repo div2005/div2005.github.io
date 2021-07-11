@@ -12,55 +12,133 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     </head>
     <body>
+
         <script src="copy.js"></script>
         <script src="nav.js"></script>
-        
+            
         <div class="container">
-            <div class="avatar">
-                <img src="assets/gg.jpg">
-            </div>
+                <div class="avatar">
+                    <img src="assets/gg.jpg">
+                </div>
 
-            <div class="nickname">
-                div2005
-            </div>
+                <div class="nickname">
+                    div2005
+                </div>
 
-            <div class="shorts">
-                <b>🍄 Click to copy</b>
-                <a onclick="copyEmail()">📫 Email » div2005.kk@gmail.com</a>
-                <a onclick="copyXMPP()">👥 XMPP » div2005@darkn.space</a>
-                <a onclick="copyDiscord()">🌌 Discord » div2005#9630</a>
-                <a onclick="copyRevolt()">🚀 Revolt.chat » div</a>
-            </div>
+                <div class="shorts">
+                    <b>🍄 Click to copy</b>
+                    <a onclick="copyEmail()">📫 Email » div2005.kk@gmail.com</a>
+                    <a onclick="copyXMPP()">👥 XMPP » div2005@darkn.space</a>
+                    <a onclick="copyDiscord()">🌌 Discord » div2005#9630</a>
+                    <a id="myBtn">🚀 Revolt.chat » div</a>
+                </div>
 
-            <div class="links">
-                <a href="https://vk.com/div2005/">
-                    <p class="link"><i class="fab fa-vk"></i></p>
-                </a>
-                <a href="https://www.youtube.com/channel/UCWEu-cjfVswq905eHGn8UIw">
-                    <p class="link"><i class="fab fa-youtube"></i></p>
-                </a>
-                <a href="https://www.twitch.tv/div2005_kk">
-                    <p class="link"><i class="fab fa-twitch"></i></p>
-                </a>
-                <a href="https://steamcommunity.com/id/div2005/">
-                    <p class="link"><i class="fab fa-steam"></i></p>
-                </a>
-                <a href="https://github.com/div2005/">
-                    <p class="link"><i class="fab fa-github"></i></p>
-                </a>
-            </div>
+                <div class="links">
+                    <a href="https://vk.com/div2005/">
+                        <p class="link"><i class="fab fa-vk"></i></p>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCWEu-cjfVswq905eHGn8UIw">
+                        <p class="link"><i class="fab fa-youtube"></i></p>
+                    </a>
+                    <a href="https://www.twitch.tv/div2005_kk">
+                        <p class="link"><i class="fab fa-twitch"></i></p>
+                    </a>
+                    <a href="https://steamcommunity.com/id/div2005/">
+                        <p class="link"><i class="fab fa-steam"></i></p>
+                    </a>
+                    <a href="https://github.com/div2005/">
+                        <p class="link"><i class="fab fa-github"></i></p>
+                    </a>
+                </div>
 
-            <div class="about">
-                <h1>Welcome! 😉
-                    <div class="line"></div>
-                </h1>
-                My name is Igor. I'm 16 years old. 
-                I am in my first year of college with a degree in Computer Engineering. 
-                I like to play Minecraft and I am the administrator of one server 🐱‍💻
+                <div class="about">
+                    <h1>Welcome! 😉
+                        <div class="line"></div>
+                    </h1>
+                    My name is Igor. I'm 16 years old. 
+                    I am in my first year of college with a degree in Computer Engineering. 
+                    I like to play Minecraft and I am the administrator of one server 🐱‍💻
+                    
+                    <br><br>
+                    The site is under construction, there are many bugs. If you have any suggestions, you can open an  <a href="https://github.com/div2005/div2005.github.io">issue on GitHub.</a>
                 
-                <br><br>
-                The site is under construction, there are many bugs. If you have any suggestions, you can open an  <a href="https://github.com/div2005/div2005.github.io">issue on GitHub.</a>
+                    <br><br>
+                    TODO:
+                    <br>
+                    Blog, tips, links to resources
+                </div>
+            
+
+            <div class="box" id="myModal">
+                <div class="rv">
+                    <div class="rv-header">
+                        <div class="rv-profile">
+
+                            <img src="https://autumn.revolt.chat/avatars/6FMDdjho-lA9M8Kad_cYpxS0Izi6TvUDvAao6KAZ0-" class="rv-avatar">
+                            <div class="rv-details">
+                                <span class="rv-nickname" onclick="copyRevolt()">@div</span>
+                                <span class="rv-status">🍕</span>
+                            </div>
+                            
+                            <div class="rv-close">
+                                <span id="closeModal">
+                                    <i class="fas fa-times"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="rv-tabs">
+                            <span>Profile</span>
+                        </div>
+
+                    </div>
+                    <div class="rv-footer">
+                        <div class="rv-cat">
+                            Badges
+                        </div>
+                        <div class="rv-badges">
+                            <img src="https://app.revolt.chat/assets/badges/translator.svg">
+                            <img src="https://app.revolt.chat/assets/badges/early_adopter.svg">
+                            <svg viewBox="0 0 24 24" height="32" width="32" aria-hidden="true" focusable="false" fill="currentColor" xmlns="http://www.w3.org/2000/svg" color="#efab44" class="StyledIconBase-ea9ulj-0 hPhvO"><path d="M21 4H3a1 1 0 00-1 1v14a1 1 0 001 1h18a1 1 0 001-1V5a1 1 0 00-1-1zm-1 11a3 3 0 00-3 3H7a3 3 0 00-3-3V9a3 3 0 003-3h10a3 3 0 003 3v6z"></path><path d="M12 8c-2.206 0-4 1.794-4 4s1.794 4 4 4 4-1.794 4-4-1.794-4-4-4zm0 6c-1.103 0-2-.897-2-2s.897-2 2-2 2 .897 2 2-.897 2-2 2z"></path></svg>                        </div>
+                        <div class="rv-cat">
+                            Information 
+                        </div>
+                        <div class="rv-info">
+                            yo!!
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
+
+
+
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.visibility = "visible";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+              closeModal.onclick = function() {
+              modal.style.visibility = "hidden";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.visibility = "hidden";
+              }
+            }
+            </script>
     </body>
 </html>
