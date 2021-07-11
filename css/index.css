@@ -87,7 +87,7 @@
     width: 100%;
     height: 125%;
     background: rgba(0, 0, 0, 0.65);
-    visibility: hidden;
+    visibility: visible;
 }
 
 .rv {
@@ -101,7 +101,8 @@
 }
 
 .rv-header {
-    height: 12vmax;
+    min-height: 12vmax;
+    height: auto;
     flex-direction: column;
     display: flex;
     justify-content: flex-end;
@@ -125,7 +126,6 @@
     align-items: center;
     gap: 3%;
     padding: 4%;
-    
 }
 
 .rv-nickname {
@@ -164,8 +164,7 @@
 
 .rv-footer {
     min-height: 5vmax;
-    padding: 4%;
-    
+    padding: 4%; 
 }
 
 .rv-cat {
@@ -253,13 +252,14 @@
     .rv {
         border-radius: 25px;
         width: 95%;
-        height: 45vmax;
+        min-height: 45vmax;
         margin-top: 35%;
     }
 
     .rv-header {
         border-radius: 25px 25px 0 0;
-        height: 20vmax;
+        min-height: 20vmax;
+        height: auto;
     }
 
     .rv-nickname {
@@ -352,14 +352,11 @@
     .rv-header {
         border-radius: 25px 25px 0 0;
         min-height: 22vmax;
+        height: auto;
     }
 
     .rv-nickname {
         font-size: 4.5em;
-    }
-
-    .rv-status {
-        font-size: 2.5em;
     }
 
     .rv-close {
@@ -371,19 +368,4 @@
         height: 12vmax;
     }
 
-    .rv-badges img, svg{
-        width: 3vmax;
-    }
-
-    .rv-tabs span {
-        font-size: 2em;
-    }
-
-    .rv-cat {
-        font-size: 1.75em;
-    }
-
-    .rv-info {
-        font-size: 2em;
-    }
 }
