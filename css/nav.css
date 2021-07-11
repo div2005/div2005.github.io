@@ -1,102 +1,88 @@
-.navigation a {
+nav {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: rgb(27, 31, 34);
+    
+}
+
+.nav-buttons {
+    display: flex;
+    flex: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1%;
+}
+
+.nav-buttons a {
+    margin: 0 1%;
     color: white;
     letter-spacing: 1.5px;
     text-decoration: none;
-    background: rgb(27, 31, 34);
-    padding: 1vmax 0;
-    display: inline-block;
-    width: 100%;
-    text-align: center;
+    
 }
  
-.navigation a:hover {
-    background: rgba(27, 31, 34, 0.5);
+.nav-buttons a:hover {
+    background: linear-gradient(50%);
 }
- 
-.navigation ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+.nav-user {
     display: flex;
-}
- 
-.navigation li {
-    flex: 1;
-}
-
-.navigation .user {
-    flex: 8; 
-    background: rgb(27, 31, 34);
+    min-width: 8%;
+    margin: 0 1%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
-.user a {
-    position: absolute;
-    right: 0;
-    width: 10%;
-}
-
-.user img {
-    position: absolute;
-    top: 50%;
-    transform: translate(-25%, -50%);
+.nav-user img {
     object-fit: cover;
     width: 2vmax;
     height: 2vmax;
     background: white;
-    margin: 0 -25%;
     border-radius: 5px;
 }
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {
     
-    .navigation ul {
-        flex-wrap: wrap;
-     }
-     
-    .navigation li {
-        flex: 1 100%;
-        border-bottom: 2px solid white;
-    }
-  
-    .navigation .user {
-        flex: 1 50%;
-     }
-  
-    .user a {
-        width: 100%;
-    }
-    
-    .user img {
-        width: 3vmax;
-        height: 3vmax;
-        margin: 0 -4%;
-    }
 }
 
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
-
-    .navigation ul {
-        font-size: 3.5em;
-        flex-wrap: wrap;
-     }
-     
-    .navigation li {
-        flex: 1 100%;
-        border-bottom: 2px solid white;
-     }
-  
-    .navigation .user {
-        margin-bottom: 10%;
-        flex: 1 100%;
-        
-     }
-     
-    .user a {
-        width: 100%;
-    }
     
-    .user img {
-        margin: 0 -8%;
+    nav {
+        align-items: center;
+        flex-direction: column;
     }
-}
 
+    .nav-buttons {
+        justify-content: space-around;
+    }
+
+    .nav-buttons a, .nav-user span {
+        padding: 2%;
+        font-size: 3em;
+    }
+
+    .nav-user {
+        min-width: 30%;
+    }
+
+    .nav-user img {
+        object-fit: cover;
+        width: 3vmax;
+        height: 3vmax;
+        background: white;
+        border-radius: 5px;
+    }
+
+
+    .nav-user img {
+        border-radius: 15px;
+    }
+
+}

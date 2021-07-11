@@ -168,7 +168,7 @@
 }
 
 .rv-cat {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgba(255, 255, 255, 0.5);
     font-size: 0.8em;
     text-transform: uppercase;
     padding: 0.5% 0;
@@ -253,7 +253,7 @@
         border-radius: 25px;
         width: 95%;
         min-height: 45vmax;
-        margin-top: 35%;
+        margin-top: 5%;
     }
 
     .rv-header {
