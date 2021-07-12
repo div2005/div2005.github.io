@@ -52,6 +52,9 @@
     height: 20vmax;
     border: 2px solid var(--secondary-bg);
     background: var(--additional-bg);
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
 }
 
 .shorts { 
@@ -62,9 +65,15 @@
 }
 
 .shorts a {
+    color: var(--main-color);
     cursor: pointer;
+    text-decoration: none;
 }
-  
+
+.shorts a:hover {
+    color: var(--secondary-color);
+}
+
 .nickname { 
     grid-area: nickname; 
     font-size: 3em;
@@ -193,6 +202,21 @@
     gap: 20%;
 }
 
+@media only screen and (min-width: 1800px), only screen and (min-device-width: 1800px) {
+    .container {
+        width: 60%;
+        margin: 5% auto;  
+    }
+
+    .line {
+        width: 40%;
+    }
+
+    .avatar img {
+        width: 15vmax;
+        height: 15vmax;
+    }
+}
 
 
 @media only screen and (max-width: 1024px), only screen and (max-device-width: 1024px) {

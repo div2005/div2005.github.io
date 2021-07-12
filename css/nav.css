@@ -6,6 +6,7 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
     background: rgb(27, 31, 34);
+    color: white;
     
 }
 
@@ -33,7 +34,7 @@ nav {
 
 .nav-user {
     display: flex;
-    min-width: 8%;
+    min-width: 10%;
     margin: 0 1%;
     flex-direction: row;
     align-items: center;
@@ -48,12 +49,9 @@ nav {
     border-radius: 5px;
 }
 
-
-
 @media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
     
     nav {
-        align-items: center;
         flex-direction: column;
     }
 
@@ -74,20 +72,18 @@ nav {
     }
 
     .nav-user {
+        width: 100%;
         min-width: 30%;
+        justify-content: center;
+        gap: 0;
     }
 
     .nav-user img {
         object-fit: cover;
-        width: 3vmax;
-        height: 3vmax;
+        width: 5vmax;
+        height: 5vmax;
         background: white;
         border-radius: 5px;
-    }
-
-
-    .nav-user img {
-        border-radius: 15px;
     }
 
 }
