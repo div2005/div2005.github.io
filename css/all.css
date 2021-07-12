@@ -7,8 +7,8 @@
     --non-main-color: rgba(255, 255, 255, 0.5);
 
     --main-bg: rgb(33, 37, 41);
-    --secondary-bg: rgb(36, 40, 43);
-    --additional-bg: rgb(40, 44, 49);
+    --secondary-bg: rgba(36, 40, 43, 0.5);
+    --additional-bg: rgba(40, 44, 49, 0.5);
     --box-bg: rgba(0, 0, 0, 0.65);
 }
 

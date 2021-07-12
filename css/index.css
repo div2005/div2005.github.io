@@ -237,8 +237,8 @@
     }
 
     .avatar > img { 
-        width: 45vmax;
-        height: 45vmax;
+        width: 50vmax;
+        height: 50vmax;
         border-radius: 15px;
     }
  
