@@ -10,10 +10,6 @@
       "nickname about"
       "shorts links";
 }
-
-.page {
-    position: relative;
-}
   
 .about { 
     grid-area: about; 
@@ -21,7 +17,7 @@
 }
 
 .about a {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--main-color);
 }
   
 .links { 
@@ -37,11 +33,11 @@
 .link {
     font-size: 4em;
     display: inline;
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--main-color);
 }
 
 .link:hover {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--secondary-color);
 }
   
 .avatar { 
@@ -54,8 +50,8 @@
     border-radius: 20px;
     width: 20vmax;
     height: 20vmax;
-    border: 2px solid rgb(40, 44, 49);
-    background: white;
+    border: 2px solid var(--secondary-bg);
+    background: var(--additional-bg);
 }
 
 .shorts { 
@@ -67,10 +63,6 @@
 
 .shorts a {
     cursor: pointer;
-}
-
-.shorts > i {
-    color: rgba(255, 255, 255, 0.45);
 }
   
 .nickname { 
@@ -87,7 +79,7 @@
     position: fixed;
     width: 100%;
     height: 125%;
-    background: rgba(0, 0, 0, 0.65);
+    background: var(--box-bg);
     visibility: hidden;
 }
 
@@ -96,7 +88,7 @@
     margin: 15% auto;
     width: 40%;
     height: auto;
-    background: rgb(33, 36, 39);
+    background: var(--main-bg);
     border-radius: 10px;
     min-height: 15vmax;
 }
@@ -109,10 +101,10 @@
     justify-content: flex-end;
     flex-wrap: nowrap;
     border-radius: 10px 10px 0 0;
-    background: rgb(30, 33, 36);
+    background: var(--secondary-bg);
     background-size: cover;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://autumn.revolt.chat/backgrounds/-2ROOBvcbMediTIukgPuG7XfZUK5D8Tsm1d8s750rW");
+    background-image: linear-gradient(var(--box-bg), var(--box-bg)), url("https://autumn.revolt.chat/backgrounds/-2ROOBvcbMediTIukgPuG7XfZUK5D8Tsm1d8s750rW");
 }
 
 .rv-avatar {
@@ -137,11 +129,11 @@
 .rv-close {
     padding: 1%;
     font-size: 1.75em;
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--additional-color);
 }
 
 .rv-close:hover {
-    color: rgba(255, 255, 255, 0.85);
+    color: var(--additional-color);
 }
 
 .rv-details {
@@ -169,7 +161,7 @@
 }
 
 .rv-cat {
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--non-main-color);
     font-size: 0.8em;
     text-transform: uppercase;
     padding: 0.5% 0;
@@ -189,11 +181,11 @@
 }
 
 .rv-info a {
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--secondary-color);
 }
 
 .rv-info a:hover {
-    color: rgba(255, 255, 255, 0.95);
+    color: var(--main-color);
 }
 
 .rv-badges img, svg {
